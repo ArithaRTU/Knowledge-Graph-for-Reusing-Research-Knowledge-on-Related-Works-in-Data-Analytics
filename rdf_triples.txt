@@ -1,0 +1,690 @@
+@prefix ns1: <http://www.example.org/RealEstateAnalytics#> .
+
+ns1:1 a ns1:AnalyticsProject ;
+    ns1:Reference "Li, M., Bao, Z., Sellis, T., Yan, S. and Zhang, R., 2018. HomeSeeker: A visual analytics system of real estate data. Journal of Visual Languages & Computing, 45, pp.1-16." ;
+    ns1:carriesOutAnalyticsOfType "Descriptive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate properties from the buyers' prespective" ;
+    ns1:definesDataset "Location centric real estate dataset." ;
+    ns1:extractsDataUsing "API calls",
+        "Website Crawling" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Facility Mapping",
+        "SA1 Mapping",
+        "School Zone Mapping",
+        "Train Station Mapping" ;
+    ns1:resultsInGraphicalResult "All results are interactive" ;
+    ns1:resultsInInteractiveResult "Choropleth map (educational and regional profiles)",
+        "Dot map 1 (transportation and facility profiles)",
+        "Dot map 2 (median price + number of properties in each suburb)",
+        "Geo coded scatter plots",
+        "Histograms on parallel cordinates (detailed statistics)",
+        "Image Card (Pictures of Properties)",
+        "Interactive Visualization with three levels (Profile-Based Region, Suburb level, property level) consisting of the following:",
+        "Multi line graph (time vs. median price)",
+        "Spider Chart (Compare properties)",
+        "Stream graph (suburbs as streams)",
+        "Word Cloud (most common features of properties)",
+        "parallel coordinates (suburb based statistics)" ;
+    ns1:resultsInReport "Report on the applicability of Homeseeker for personal in the real estate industry" ;
+    ns1:utilizesAlgorithmForAnalysis "Not used" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations",
+        "Data characteristic analysis" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal Data (Dates)",
+        "Textual",
+        "Visual (Images)" ;
+    ns1:utilizesDataSource "Australia Curriculum, Assessment and Reporting Authority",
+        "Australian Bureau of Statistics – Census",
+        "Better Eduation Australia",
+        "Coles Supermarket Store Locator",
+        "GTFS (General Transit Feed Specification) Victoria",
+        "Google Maps API",
+        "Health Engine Australia",
+        "Land Channel, Department of Environment, Land, Water and Planning, Victoria State Government",
+        "Melbourne School Zones",
+        "Real Estate Australia",
+        "Woolworth Supermarket Store Locator" ;
+    ns1:utilizesModelForAnalysis "Not used" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to visual analysis of real estate data" ;
+    ns1:utilizesSoftwareForAnalysis "Google Maps JavaScript API",
+        "HTML5",
+        "Javascript",
+        "MySQL",
+        "PHP" ;
+    ns1:verifiesResultsUsing "Domain expert interaction with demo system" .
+
+ns1:10 a ns1:AnalyticsProject ;
+    ns1:Reference "Y. Zhao, R. Ravi, S. Shi, Z. Wang, E. Y. Lam and J. Zhao, \"PATE: Property, Amenities, Traffic and Emotions Coming Together for Real Estate Price Prediction,\" 2022 IEEE 9th International Conference on Data Science and Advanced Analytics (DSAA), Shenzhen, China, 2022, pp. 1-10, doi: 10.1109/DSAA54385.2022.10032416" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset """H4M Dataset 
+( Heterogeneous, multi-source, multi- modal, multi-view and multi-distributional dataset for socioeconomic analytics in case of Beijing)""",
+        "Test dataset (30% of H4M dataset)",
+        "Train dataset (70% of H4M dataset)" ;
+    ns1:extractsDataUsing "Not defined" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Bar chart showing importance of different features for the real estate price prediction",
+        "Corelation matrix of features within the dataset",
+        "Intuitive comparisons between the linear and XGBoost regression model for real estate price prediction using distribution plots, scatter plots and histograms " ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "Predictive model for predicting real estate prices" ;
+    ns1:resultsInReport "Report stating implications of real estate factors for citizens, local authorities and urban planners, and for real-estate investors ",
+        "State different feature impact on real estate price." ;
+    ns1:utilizesAlgorithmForAnalysis "Linear Regression",
+        "Social emotions analysis algorithm ",
+        "XGBoost regression ",
+        "pearson's correlation coefficient" ;
+    ns1:utilizesAnalysisMethod "Correlation analysis",
+        "Data Visualizations" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal Data (Dates)" ;
+    ns1:utilizesDataSource "Baidu Maps ",
+        "Microblog posts in Beijing " ;
+    ns1:utilizesModelForAnalysis "Not defined" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to real estate price forecasting" ;
+    ns1:utilizesSoftwareForAnalysis "Python(XGBoost library)" ;
+    ns1:verifiesResultsUsing "Evaluation of created model using test dataset evaluated using metrics R squared, adjusted R squared, MAE, MSE, RMSE" .
+
+ns1:11 a ns1:AnalyticsProject ;
+    ns1:Reference "H. Wen and Y. Liu, \"Study of Residential Price Index Based on Quantile Regression Model — A Case Study on Hangzhou, China,\" 2020 IEEE 5th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA), Chengdu, China, 2020, pp. 250-254, doi: 10.1109/ICCCBDA49378.2020.9095730." ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Price Index" ;
+    ns1:definesDataset "Hangzhou quarterly second hand housing transactions( betweeh 2007 and 2015)  Dataset" ;
+    ns1:extractsDataUsing "Not defined" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Line graph of Quantile House Price Index",
+        "Line plot showing Coefficient Estimates by Quantile" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "hedonic price model that uses OLS and quantile regression to construct the Hangzhou residential price index" ;
+    ns1:resultsInReport "Report sepcifying the impacts of of different charateristic variables (Ditance to Wulin Square, Distance to West Lake, Natural environement, etc..) on diffrent quality homes.",
+        "The report must aid scientific decision-making for government policy formulation, real estate agencies and home buyers. " ;
+    ns1:utilizesAlgorithmForAnalysis "Not defined" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations",
+        "least square method (OLS)",
+        "quantile regression method" ;
+    ns1:utilizesDataOfType "Numerical",
+        "Temporal Data (Dates)" ;
+    ns1:utilizesDataSource "Hangzhou Real Estate Administration " ;
+    ns1:utilizesModelForAnalysis "logarithmic form of hedonic price model created based on the least square method (OLS)",
+        "quantile regression model constructed with the quantile regression method (evaluated using R squared value" ;
+    ns1:utilizesProjectDocumentation "Research articles on realting real estate price index models" ;
+    ns1:utilizesSoftwareForAnalysis "Not defined" ;
+    ns1:verifiesResultsUsing "The created real estate price index with the NBS Average Price Index" .
+
+ns1:12 a ns1:AnalyticsProject ;
+    ns1:Reference "K. Sood, S. Shang and N. Nijad, \"Predictive Analytics for Real Estate During COVID-19 Pandemic,\" 2023 IEEE World AI IoT Congress (AIIoT), Seattle, WA, USA, 2023, pp. 0338-0344, doi: 10.1109/AIIoT58121.2023.10174563" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "Testing dataset (20 % of defined datasets)",
+        "The New York Times Coronavirus data [10] in the United States has the cumulative counts of coronavirus cases and deaths in the United States ",
+        "The US city dataset [11] that provides the US cities, coun- ties, and FIPS (Federal Information Processing Standard) county number",
+        "Training dataset (80 % of defined datasets)",
+        """Zillow House Price Dataset:
+The median list price of all homes (by month,Metropolitan area) 
+– The median sale price of all homes (by month, Metro)
+– Percentage sold above list price (by month, Metro) – The median days to close (by month, Metro)
+– For sale inventory number (by month, Metro)
+– Rent index (by month, Metro)""" ;
+    ns1:extractsDataUsing "asmp. Data file download" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Bar chart showing feature relavance for each of the models.",
+        "Confusion matrix used to define each ML models created.",
+        "Line+Bar chart COVID cases versus house sales price in metropilitan areas ",
+        "Line+Bar chart of COVID cases versus inventory in metropilitan areas ",
+        "Pearson correlation coefficients between data variables" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "LightGBM model that can predict housing prices based on COVID-19 cases with an accuracy of 98.05% evaluated using precision, recall, and F1 score. " ;
+    ns1:resultsInReport "Report showing the correlation between the number of deaths due to COVID and the house inventory number and that the number of covid cases and deaths tend to impact the prices in the housing market." ;
+    ns1:utilizesAlgorithmForAnalysis "KNN ",
+        "LightGBM",
+        "Linear regression",
+        "Random forest",
+        "SVM",
+        "XGBoost" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations" ;
+    ns1:utilizesDataOfType "Numerical",
+        "Temporal Data",
+        "Textual (Metropolitan area)" ;
+    ns1:utilizesDataSource "New York Times COVID cumulative cases and deaths",
+        "United States Cities Database ",
+        "Zillow databases " ;
+    ns1:utilizesProjectDocumentation "Not defined" ;
+    ns1:utilizesSoftwareForAnalysis "Scikit- learn library " ;
+    ns1:verifiesResultsUsing "The model must be vertified using a test dataset(which is 20% of the total defined dataset)." .
+
+ns1:13 a ns1:AnalyticsProject ;
+    ns1:Reference "R. Rivera-Castro and E. Burnaev, \"CAUSALYSIS: Causal Machine Learning for Real-Estate Investment Decisions,\" 2021 IEEE 8th International Conference on Data Science and Advanced Analytics (DSAA), Porto, Portugal, 2021, pp. 1-3, doi: 10.1109/DSAA53316.2021.9564210" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Return on Investment (ROI) of property rentals" ;
+    ns1:definesDataset "Airbnb listings for a country dataset" ;
+    ns1:extractsDataUsing "Website data scrapping" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Not defined" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "An ROI model that updates whenever a user intervenes in the data for example, the ROI is higher on properties with fewer bedrooms because more bedrooms have increased initial investment. " ;
+    ns1:resultsInReport "Not defined" ;
+    ns1:utilizesAlgorithmForAnalysis "term frequency-inverse document frequency (TF-IDF) function to convert the string to an integer value" ;
+    ns1:utilizesAnalysisMethod "probabilistic principal component analysis (PPCA) " ;
+    ns1:utilizesDataOfType "Numerical",
+        "Textural (a flat name, city name, etc)" ;
+    ns1:utilizesDataSource "Airbnb listings " ;
+    ns1:utilizesModelForAnalysis """Causal generative model consisting of a variable factor model, created using the following algorithm:
+1) Find and fit a good latent variable factor model that captures the joint distribution of causes.
+2) Use the model to infer the latent variables Zi for each observation given the observed assignments Ai.
+3) Use the inferred latent variable as a substitute for unob- served confounders and proceed with causal inference.\"""" ;
+    ns1:utilizesProjectDocumentation "Not defined" ;
+    ns1:utilizesSoftwareForAnalysis "Pyro" ;
+    ns1:verifiesResultsUsing "Not defined" .
+
+ns1:14 a ns1:AnalyticsProject ;
+    ns1:Reference "A. Karduni, I. Cho, G. Wessel, W. Ribarsky, E. Sauda and W. Dou, \"Urban Space Explorer: A Visual Analytics System for Urban Planning,\" in IEEE Computer Graphics and Applications, vol. 37, no. 5, pp. 50-60, 2017, doi: 10.1109/MCG.2017.3621223" ;
+    ns1:carriesOutAnalyticsOfType "Descriptive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Urban planning using geospatial tweets (posts on Twitter platfrom alsongside the associated location from which the tweet was posted)" ;
+    ns1:definesDataset "Flow ploylines dataset ",
+        "Geolcated Tweet dataset for Los Angeles",
+        "Geolcated Tweet dataset for New York City",
+        "Points of Interest Dataset",
+        "Population density dataset" ;
+    ns1:extractsDataUsing "asmp. API calls" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Spatial aggregation (aggregating nodes into regions and flows between places to flows be- tween regions) with temporal clustering (grouping spatial similarities across time steps) " ;
+    ns1:resultsInGraphicalResult "All results are interactive" ;
+    ns1:resultsInInteractiveResult """Creation of a urban space explorer interface with seven main views:
+1. Tweet desnsity view in the form of an interactive map.
+2. Word Cloud view - most ferquent words used in tweets shown in word cloud.
+3. Timeline view showing tweet activity - in a timeseries graph
+4. Tweet flow view - map showing the movement of twitter users.
+5. Flow length/ Time view - Map showing individual movement paths.
+6. Tweet language view 
+7. Topic view""" ;
+    ns1:resultsInReport "Not defined" ;
+    ns1:utilizesAlgorithmForAnalysis "Dijkstra’s shortest-path algorithm to calculate the shortest path between each tweet location ",
+        "Spearman’s rank correlation to comapres tweets populations and points of intrest." ;
+    ns1:utilizesAnalysisMethod "Correlation Analysis",
+        "Data Visualizations",
+        "Flow analysis" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal Data",
+        "Textaul (tweet content)" ;
+    ns1:utilizesDataSource "2014 American Community Survey ",
+        "Open- StreetMap ",
+        "Twitter Firehouse" ;
+    ns1:utilizesModelForAnalysis "Not defined" ;
+    ns1:utilizesProjectDocumentation "Survey of needs and expectation from interactive visual analytics applications" ;
+    ns1:utilizesSoftwareForAnalysis "GISFE2E",
+        "OpenStreetMap" ;
+    ns1:verifiesResultsUsing "The visual analytics system must be tested using user interviews." .
+
+ns1:15 a ns1:AnalyticsProject ;
+    ns1:Reference "Li, L. and Chu, K.H., 2017, May. Prediction of real estate price variation based on economic parameters. In 2017 International Conference on Applied System Innovation (ICASI) (pp. 87-90). IEEE" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset """13 seasons data sets (test dataset):
+Gross domestic product, money supply M2, gross net income (GNI), economic grow rate, prosperity signal, house price tendency index, house price/GNI ratio, building permit of residence, consumer price index, benchmarking lending rate, new house-purchasing loans""",
+        """40 seasons data sets (training dataset):
+Gross domestic product, money supply M2, gross net income (GNI), economic grow rate, prosperity signal, house price tendency index, house price/GNI ratio, building permit of residence, consumer price index, benchmarking lending rate, new house-purchasing loans""" ;
+    ns1:extractsDataUsing """Data dervation:
+''season change rate are calculated '""" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Line graph showing Comparison of RBF and BPF normalized house price estimation with that of Cathy house price.",
+        "Line graph showing Comparison of RBF and BPF normalized house price estimation with that of Sinyi house price.",
+        "Line graph showing the predections made by the BPF Neural Network and the RBF Neural Network on the growth rate of the real estate market vs the actual groth rate of Cathay index",
+        "Line graph showing the predections made by the BPF Neural Network and the RBF Neural Network on the growth rate of the real estate market vs the actual groth rate of Sinyi index" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "Multilayer back propagation feedforward neural network that predicts the real estate price variation",
+        "Radial Basis Function (RBF) Neural Network that predicts the real estate price variation" ;
+    ns1:resultsInReport "A report showing the comparision of BPF Neural Network and RBF Neural Networks performance based on mean absolute precentage error and precentage root mean square error between cathay price index and sinyi house price index." ;
+    ns1:utilizesAlgorithmForAnalysis "Multilayer back propagation feedforward neural network",
+        """Radial Basis Function (RBF) Neural Network with:
+1 hidden layer
+gussian activation functions for hidden layer neuron activation""" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations" ;
+    ns1:utilizesDataOfType "Numerical" ;
+    ns1:utilizesDataSource "public publication source between 2005 2nd quarter and 2015 2nd quarter",
+        "real estate companies between 2005 2nd quarter and 2015 2nd quarter" ;
+    ns1:utilizesModelForAnalysis "Not defined" ;
+    ns1:utilizesProjectDocumentation "Not defined" ;
+    ns1:utilizesSoftwareForAnalysis "Neural Netwrok toolbox of MATLAB" ;
+    ns1:verifiesResultsUsing "Compare the results by comparing the predictions made by model with Cathay House Price Index and the Sinyi Home Price Index based on the matched target of season variation rate" .
+
+ns1:16 a ns1:AnalyticsProject ;
+    ns1:Reference "Yu, Y., Lu, J., Shen, D. and Chen, B., 2021. Research on real estate pricing methods based on data mining and machine learning. Neural Computing and Applications, 33, pp.3925-3937." ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Pricing Models" ;
+    ns1:definesDataset "SP/CS comprehensive 10-city housing price index series from January 1981 to December 2019 dataset" ;
+    ns1:extractsDataUsing "Not defined" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Line graph showing market price of risk based on the linear trend estimation model",
+        "Line graph showing market price of risk based on the time-varying trend estimation model ",
+        "Separate bar+line chart real estate price index call option contract prices in January 2019, February 2019, and March 2019",
+        "Statistical diagram of the model’s prediction results for housing prices" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "real estate pricing model that can dynamically estimate the index trend and obtain a trend function with a term structure." ;
+    ns1:resultsInReport "Report comparing the combination option pricing model with original pricing model, the pricing model based on time-varying trends, and the pricing model based on the time-varying O–U process." ;
+    ns1:utilizesAlgorithmForAnalysis "Binary tree",
+        "Net present value (NPV) tree" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations" ;
+    ns1:utilizesDataOfType "Numerical",
+        "Temporal Data (Dates)" ;
+    ns1:utilizesDataSource "Not defined" ;
+    ns1:utilizesModelForAnalysis """Combination option pricing model, consisting of:
+Real Estate Price Tree
+NPV tree
+Option Tree
+with volatility paramets and the mean recovery rate adjusted to ime-varying piecewise functions""" ;
+    ns1:utilizesProjectDocumentation "Research articles on the application of big data in real estate" ;
+    ns1:utilizesSoftwareForAnalysis "Not defined" ;
+    ns1:verifiesResultsUsing "Data simulation based testing of pricing model",
+        "The time-varying model must be verified through the empirical analysis of SP/CS housing index features and option contracts." .
+
+ns1:17 a ns1:AnalyticsProject ;
+    ns1:Reference "Sagi, A., Gal, A., Czamanski, D. and Broitman, D., 2022. Uncovering the shape of neighborhoods: harnessing data analytics for a smart governance of urban areas. Journal of Urban Management, 11(2), pp.178-187" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "Housing transactions in England and Wale between 1955 and 2018 dataset",
+        "geographical divisions (test) dataset" ;
+    ns1:extractsDataUsing "Generated using Vector Tile tool in ESRI GIS Pro",
+        "amsp. Data file download" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Bar chart showing mean median error of evaluating housing transactions in neighborhoods by their rural/urban classification made by ANN model",
+        "Map showing 9 main regions of England and Wales and their 352 local authorities",
+        "Median error of estimating housing transactions' price in all five divisions and all three created ML models",
+        "Median error of estimating housing transactions' price made by ANN by neighborhood (MSOA) and Rural/Urban classification",
+        "Wards, MSOAs and random rectangles " ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "Model that predicts real estate prices that utilizes only five features" ;
+    ns1:resultsInReport "Report on the comapring the accuracy of the created models." ;
+    ns1:utilizesAlgorithmForAnalysis "Artificial Neural Networks",
+        "Hedonic method(multiple linear regression)",
+        "random forest algorithm" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical ",
+        "Temporal" ;
+    ns1:utilizesDataSource "Housing price database",
+        "Website (data.gov.uk.)" ;
+    ns1:utilizesModelForAnalysis "Not used" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to real estate price prediction using machine learning" ;
+    ns1:utilizesSoftwareForAnalysis "Not defined" ;
+    ns1:verifiesResultsUsing "Evaluation of model using test dataset using the R squared, Adjusted R2, Less than ten percent error, median error and root mean square error. " .
+
+ns1:18 a ns1:AnalyticsProject ;
+    ns1:Reference "Buda, E., Broitman, D. and Czamanski, D., 2023. Land value dynamics and the spatial evolution of cities following COVID 19 using big data analytics. The Annals of Regional Science, 70(2), pp.429-445" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Land Use in Metropolitan Aarea " ;
+    ns1:definesDataset "Buildings volume dataset",
+        "Real Estate Transactions preformed in Insreal during 1998-2020 dataset" ;
+    ns1:extractsDataUsing "Data deravation to get land valuation",
+        "asmp. Datafile download" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "density map showing the future urban development areas locations",
+        "density map showing the spatial dataset of the study area",
+        "line graph showing Land value densities vs. built density" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "model  that provide forecasts of the future spatial structure relations between the increase of land value density and the explanatory variables " ;
+    ns1:resultsInReport "Report showing the impact of COVID-19 induced behavioural changes on urban development based on the results of the land use model" ;
+    ns1:utilizesAlgorithmForAnalysis "Kernel density smooting procedure(bandwidth of 500m)",
+        "Land valuation equation",
+        "Logit regression to show relation between the increase of land value density and explanatory variables." ;
+    ns1:utilizesAnalysisMethod "Data Visualizations",
+        "non-spatial statistical analysis of the associations between the described datasets",
+        "spatial analysis" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal" ;
+    ns1:utilizesDataSource "2020 issue of the book of Dekel corporation",
+        "Database of built structures created and maintained by the Survey of Isreal",
+        "Detailed spatial map of statutory plans",
+        "Israeli Tax Authority" ;
+    ns1:utilizesModelForAnalysis "Land use model that was calibrated with vast georeference data" ;
+    ns1:utilizesProjectDocumentation "Not defined" ;
+    ns1:utilizesSoftwareForAnalysis "Not defined" ;
+    ns1:verifiesResultsUsing "Comparison of actual scenario with the forcasted scenario created by the model of a specified spatial playground",
+        "The model must be tested using test dataset. " .
+
+ns1:19 a ns1:AnalyticsProject ;
+    ns1:Reference "Hopf, K. Mining volunteered geographic information for predictive energy data analytics.Energy Inform 1, 4 (2018). https://doi.org/10.1186/s42162-018-0009-3" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Geographic information in relation to household energy" ;
+    ns1:definesDataset "Electricity consumption and household location (utility) dataset",
+        "Volunteered Geographic Information (VGI) dataset." ;
+    ns1:extractsDataUsing "Online surveys on a customer engagement web portal to increase households energy-efficiency",
+        "amsp. API calls",
+        "web crawler" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Classification results (AUC) for use of consumption data, consumption and OSM data, Consumption, OSM and real estate data, only OSM data with 95% confidence interval obtained using 10-fold cross-validation",
+        "Frequencies of real estate advertisements within a radius of 1000 m around households in the available utility dataset",
+        "Histogram showing the frequencies of n=75 active VGI initiatives 2017, according to data types, and categories." ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "A machine learning model that can predict characteristics for individual private households, such as household type and size, heating type and number of residents" ;
+    ns1:resultsInReport "Report showing the utility of VGI data for load forecasting or studies regarding consumer energy behavior in energy markets" ;
+    ns1:utilizesAlgorithmForAnalysis "Random Forest Classifier (500 trees)" ;
+    ns1:utilizesAnalysisMethod "10-folds corss-validation",
+        "Data Visualizations",
+        "Sensitivity analysis for different trees for classification" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Textual" ;
+    ns1:utilizesDataSource "Online Portals for real estate advertisments",
+        "OpenStreetMap (OSM) ",
+        "Swiss utility company" ;
+    ns1:utilizesModelForAnalysis "not used" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to big data analytics and predictive analytics in the energy industry" ;
+    ns1:utilizesSoftwareForAnalysis "randomForest package in GNU R" ;
+    ns1:verifiesResultsUsing "Comparison with other studies and for better interpretation of the results, Accuracy and the harmonic mean of Precision and Recall, called F1-score" .
+
+ns1:2 a ns1:AnalyticsProject ;
+    ns1:Reference "Grybauskas, A., Pilinkienė, V. and Stundžienė, A., 2021. Predictive analytics using Big Data for the real estate market during the COVID-19 pandemic. Journal of big data, 8(1), pp.1-20." ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "Monthly (between May, August 2020) real estate of Vilnius dataset",
+        "Testing dataset(30% of Monthly (between May, August 2020) real estate dataset)",
+        "Training dataset(70% of Monthly (between May, August 2020) real estate dataset)" ;
+    ns1:extractsDataUsing "Website scraping algorithm" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Heat map of Time-On-Market)",
+        "Line graph showing the Tom on Market varaible effect",
+        "Vilinus City Vacancy Maps" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "XGBoost model that utilizes Shapley values (SHAP) values that provides four months and both sell and rent operations predictions" ;
+    ns1:resultsInReport "Descriptive Statistics of Sell Operations in Different Months",
+        "Predictions of the 4 months average in rent and sell operations.",
+        "Predictions of the Time On Market variable for the next four month.",
+        "Report that gives guidance to investors, households and other market participants how to evaluate the real estate market conditions and how to anticipate price revisions",
+        "Summary Statistics of rent variables",
+        "Summary Statistics of sell variables" ;
+    ns1:utilizesAlgorithmForAnalysis "Ada Boost Classifier ",
+        "CatBoost Classifier",
+        "Decision Tree Classifier ",
+        "Extra Trees Classifier",
+        "Extreme Gradient Boosting",
+        "Extreme Gradient Boosting Classifier",
+        "K-Neighbors Classifier ",
+        "Light Gradient Boosting Machine",
+        "Linear Discriminant Analysis ",
+        "Logistic Regression ",
+        "Naive Bayes ",
+        "Quadratic Discriminant Analysis ",
+        "Random Forest Classifier",
+        "Ridge Classifier ",
+        "SMOTE synthetic minority sampling algorithm ",
+        "SVM—Linear Kernel " ;
+    ns1:utilizesAnalysisMethod "Data Visualizations" ;
+    ns1:utilizesDataOfType "Numerical",
+        "Temporal Data (Dates)" ;
+    ns1:utilizesDataSource "Websites with apartment listings in Vilnius." ;
+    ns1:utilizesModelForAnalysis "Not used" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to real estate varaibles and predicting real estate prices" ;
+    ns1:utilizesSoftwareForAnalysis "Python" ;
+    ns1:verifiesResultsUsing "Validation of model using test dataset using accuracy, area-under-the-curve (AUC), recall, precision, F1-score and Kappa and Matthews correlation coefficient (MCC)" .
+
+ns1:20 a ns1:AnalyticsProject ;
+    ns1:Reference """Eduard Hromada,
+Mapping of Real Estate Prices Using Data Mining Techniques,
+Procedia Engineering,
+Volume 123,
+2015,
+Pages 233-240,
+ISSN 1877-7058,
+https://doi.org/10.1016/j.proeng.2015.10.083.
+(https://www.sciencedirect.com/science/article/pii/S1877705815031847)""" ;
+    ns1:carriesOutAnalyticsOfType "Descriptive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "Advertised real estate of Czech Republic database" ;
+    ns1:extractsDataUsing "Systematic search and download" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Bar chart showing average market price of flats for sale in the regional cities of the Czech Republic",
+        "Bar chart showing the average market price of monthly rents in the regions of the Czech Republic",
+        "Line graph showing the average market price of monthly rents depending on floor area in Czech Republic",
+        "Pie chart showing the structure of real estate sales by region in the Czech Republic" ;
+    ns1:resultsInInteractiveResult "A software that would enable personel in the field of real estate to gain insight on actual changes in the market prices of real estate in the Czech Republic" ;
+    ns1:resultsInReport "Not defined" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal",
+        "Textual",
+        "Visual (Images)" ;
+    ns1:utilizesDataSource "Servers of real estate companies",
+        "Webpages of real estate companies" ;
+    ns1:utilizesModelForAnalysis "Not used" ;
+    ns1:utilizesProjectDocumentation "Research articles real estate databases and analysis" ;
+    ns1:utilizesSoftwareForAnalysis "Borland Delphi for Microsoft Windows programming" ;
+    ns1:verifiesResultsUsing "Not used" .
+
+ns1:3 a ns1:AnalyticsProject ;
+    ns1:Reference "Sandeep Kumar, E., Talasila, V., Rishe, N., Suresh Kumar, T.V. and Iyengar, S.S., 2019. Location identification for real estate investment using data analytics. International Journal of Data Science and Analytics, 8, pp.299-323." ;
+    ns1:carriesOutAnalyticsOfType "Prescriptive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Locations" ;
+    ns1:definesDataset "TerraFly dataset of Miami Beach" ;
+    ns1:extractsDataUsing "asmp. Data file (.csv,.xls, .json) download" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult " Variance plots of attributes",
+        "Plots showing information gain and system entropy",
+        "Visualisation of the neural network architecture" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "Multilayer classification model that can be used to automate location identification for real estate investment." ;
+    ns1:resultsInReport "Report on the applicability of a multilayer classifaction model in real estate." ;
+    ns1:utilizesAlgorithmForAnalysis "Attribute selection(Pearson's coefficient with real estate price)",
+        "Kolmogorov– Smirnov (K–S) test ",
+        "decision trees(ID3- algorithm) + artificial neural networks (2 hidden layers with 6 and 4 neurons, input layer with 4 neurons, output layer 1 neuron)",
+        "decision trees(ID3- algorithm) + principal component analysis(using K-Means clustering)" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations",
+        "Principle component analysis",
+        "Two-layer constrained optimiza- tion approach" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal Data (Dates)" ;
+    ns1:utilizesDataSource "TerraFly platform" ;
+    ns1:utilizesModelForAnalysis "Not used" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to real estate price prediction and location indentification" ;
+    ns1:utilizesSoftwareForAnalysis "MATLAB 2014 for simulations" ;
+    ns1:verifiesResultsUsing "The created result is tested on a validation dataset(500 randomly selected condominiums) for 5 iterations using accuracy measures(Mean Absolute Error)" .
+
+ns1:4 a ns1:AnalyticsProject ;
+    ns1:Reference "Sun, G., Liang, R., Wu, F. and Qu, H., 2013. A Web-based visual analytics system for real estate data. Science China Information Sciences, 56, pp.1-13." ;
+    ns1:carriesOutAnalyticsOfType "Descriptive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Locations" ;
+    ns1:definesDataset "Hangzhou real estate dataset" ;
+    ns1:extractsDataUsing "Web spider (crawler) program " ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "All results are interactive" ;
+    ns1:resultsInInteractiveResult """Web based real estate visualization platform with four views:
+1. Geomap view which shows the geographical distribution of the houses and house clusters on the map
+2. Stacked graph view which visualizes the number of house sale over time using various layouts and layer orderings 
+3. Clustered pixel bar view which visualizes changes in price or number of sales over time 
+4. Treemap view which presents the hierarchical structure of the data using various combinations of layouts and orderings """ ;
+    ns1:resultsInReport "Report on the utility of the created visualisation system." ;
+    ns1:utilizesAlgorithmForAnalysis "K-Means Clustering" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations (Map of geographical distribution of houses, clustered pixel bar, treemap)",
+        "Time series clustering" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal Data (Dates)" ;
+    ns1:utilizesDataSource "four Hangzhou official and authoritative websites " ;
+    ns1:utilizesModelForAnalysis "Not used" ;
+    ns1:utilizesProjectDocumentation "Real Estate relating to geographical visualization, time series visualization, and web technologies" ;
+    ns1:utilizesSoftwareForAnalysis "HTML5",
+        "J2EE",
+        "Processing.js library(Javascript)" ;
+    ns1:verifiesResultsUsing "Testing of the created system using intervies with ordinary users, real estate investors, and research group." .
+
+ns1:5 a ns1:AnalyticsProject ;
+    ns1:Reference "Y. Sun and G. Peng, \"Developing Area Real Estate Valuation Based on Linear Regression and KNN Algorithm,\" 2022 6th Annual International Conference on Data Science and Business Analytics (ICDSBA), Changsha, China, 2022, pp. 38-42, doi: 10.1109/ICDSBA57203.2022.00014." ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "Real estate valuation dataset",
+        "Testing dataset(20% of real estate valuation dataset)",
+        "Training dataset(80% of real estate valuation dataset)" ;
+    ns1:extractsDataUsing "asmp. Data file download" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Boxplot of House Unit Price",
+        "Line graph showing house unit price kernel density estimation",
+        "Overlay Histograms of Loans from 1999 to 2019" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "KNN model would classify the rank of the unit price and offer home buyers an intuitive price rank among similar houses",
+        "Linear model predicts the House Unit Price" ;
+    ns1:resultsInReport "A model that 'classify the rank of the unit price and offer home buyers an intuitive price rank among similar houses'.",
+        "Report on the relation between age of house and nearby convenience stores,  and the unit price of a house.",
+        "Report with the predictions of House Unit Price." ;
+    ns1:utilizesAlgorithmForAnalysis "K-Nearest Neighbor classification",
+        "Linear Regression" ;
+    ns1:utilizesAnalysisMethod "Cluster analysis",
+        "Data Visualizations (Boxplots, Line graphs, Point Plots )" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical" ;
+    ns1:utilizesDataSource "UCI Machine Learning Repository " ;
+    ns1:utilizesModelForAnalysis "Not used" ;
+    ns1:utilizesProjectDocumentation "Not defined" ;
+    ns1:utilizesSoftwareForAnalysis "Not defined" ;
+    ns1:verifiesResultsUsing "The created result is tested on a testing dataset using RMSE and R squared for linear regression model and accuracy for KNN model" .
+
+ns1:6 a ns1:AnalyticsProject ;
+    ns1:Reference "S. Li, \"Research on Evolutionary Optimization Algorithm of Real Estate Pricing Based on Data Mining,\" 2021 Fifth International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC), Palladam, India, 2021, pp. 793-796, doi: 10.1109/I-SMAC52330.2021.9640695." ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "Real estate transaction dataset" ;
+    ns1:extractsDataUsing "asm. Surveys",
+        "asm. Web scarping",
+        "print a form to investigate real estate transactions'" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Box plot showing the change curve of real estate pricing based on different factors.",
+        "Line graph showing price changes after real estate pricing optimization.",
+        "Line graph showing price trend of traditional real estate pricing methods" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "Optimized model that can predict real estate prices" ;
+    ns1:resultsInReport "Report exploring the use of data mining algorithms to optimize real estate pricing" ;
+    ns1:utilizesAlgorithmForAnalysis "Data mining algorithm(defined in article)" ;
+    ns1:utilizesAnalysisMethod "Association analysis ",
+        "Correlation analysis",
+        "Data Visualizations" ;
+    ns1:utilizesDataOfType "The data types are not explicitly defined for the variables selected (location level, traffic conditions, internal area, building structure, construction time, building quality, green area, street position, floor, orientation, decoration degree, floor height, use, transaction time and transaction price)",
+        "asm. Numerical, Geographical, Temporal, Textual" ;
+    ns1:utilizesDataSource "real estate-related websites, such as China Housing and Real Estate Information Network, SouFun Network, and Focus Real Estate Network",
+        "relevant personnel in the real estate market" ;
+    ns1:utilizesModelForAnalysis "Not defined" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to real estate price prediction" ;
+    ns1:utilizesSoftwareForAnalysis "Not defined" ;
+    ns1:verifiesResultsUsing "Not defined" .
+
+ns1:7 a ns1:AnalyticsProject ;
+    ns1:Reference "Y. Huang, \"Design and application of real estate market monitoring platform based on spatio-temporal big data,\" 2021 International Conference on Big Data, Artificial Intelligence and Risk Management (ICBAR), Shanghai, China, 2021, pp. 28-31, doi: 10.1109/ICBAR55169.2021.00014." ;
+    ns1:carriesOutAnalyticsOfType "Descriptive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Pricing Market " ;
+    ns1:definesDataset "Spatio-temporal data(base)" ;
+    ns1:extractsDataUsing "amps. Database querying" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Horizontal Integration",
+        "Vertical Integration" ;
+    ns1:resultsInGraphicalResult "Not defined" ;
+    ns1:resultsInInteractiveResult """Hubei Province Real Estate Market Monitoring and Analysis Platform for monitoring and analysis of:
+commercial housing sales area
+the average transaction price of commercial housing 
+construction of commercial housing""" ;
+    ns1:utilizesAlgorithmForAnalysis "Not defined" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations" ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Temporal Data",
+        "Textual" ;
+    ns1:utilizesDataSource "Public data of the real estate market in Hubei Province " ;
+    ns1:utilizesModelForAnalysis "Not defined" ;
+    ns1:utilizesProjectDocumentation "Not defined" ;
+    ns1:utilizesSoftwareForAnalysis "ECharts  ",
+        "MySQL",
+        "Oracle" ;
+    ns1:verifiesResultsUsing "Not defined" .
+
+ns1:8 a ns1:AnalyticsProject ;
+    ns1:Reference "P. Mody, M. Motiramani and A. Singh, \"Enhancing Real Estate Market Insights through Machine Learning: Predicting Property Prices with Advanced Data Analytics,\" 2023 4th IEEE Global Conference for Advancement in Technology (GCAT), Bangalore, India, 2023, pp. 1-8, doi: 10.1109/GCAT59970.2023.10353243" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "Real estate prices for Metropolitan of Mumbai " ;
+    ns1:extractsDataUsing "Web scraping" ;
+    ns1:inContext "Real Estate" ;
+    ns1:resultsInGraphicalResult "Correlation Diagram between features in the dataset",
+        "Count plot for discreate features within the dataset",
+        "Histogram plot for different features in the dataset",
+        "Snapshot of front end of created application" ;
+    ns1:resultsInInteractiveResult "'The predicted cost is then returned as a response to the user through the API'",
+        "Flask application generates the predicted real estate cost based on the provided input data" ;
+    ns1:resultsInModel "Models that predicts real estate prices" ;
+    ns1:resultsInReport "Report showing the comaprison of algorithms for creating predictive models based on MSE, MAE, R squared" ;
+    ns1:utilizesAlgorithmForAnalysis "Decision Tree ",
+        "Lasso Regression ( feature selection)",
+        "Multiple Linear Regression ",
+        "Random Forest ",
+        "Recursive Feature Elimination ",
+        "SelectKBest algorithm ",
+        "Support Vector Regression ",
+        "XGBoost " ;
+    ns1:utilizesAnalysisMethod "Data Visualizations",
+        "Feature selection" ;
+    ns1:utilizesDataOfType "Numerical",
+        "Textual" ;
+    ns1:utilizesDataSource "Undefined 'online sources'" ;
+    ns1:utilizesModelForAnalysis "Not defined" ;
+    ns1:utilizesProjectDocumentation "Research articles relating to real estate price forecasting" ;
+    ns1:utilizesSoftwareForAnalysis "Python ( Pickle, Flask)" ;
+    ns1:verifiesResultsUsing "The created predictive model was tested using a test dataset." .
+
+ns1:9 a ns1:AnalyticsProject ;
+    ns1:Reference "M. De Nadai and B. Lepri, \"The Economic Value of Neighborhoods: Predicting Real Estate Prices from the Urban Environment,\" 2018 IEEE 5th International Conference on Data Science and Advanced Analytics (DSAA), Turin, Italy, 2018, pp. 323-330, doi: 10.1109/DSAA.2018.00043" ;
+    ns1:carriesOutAnalyticsOfType "Predictive" ;
+    ns1:concernsSystemOrObjectOrMeasureOfInterest "Real Estate Valuation (Price)" ;
+    ns1:definesDataset "ATLAS dataset",
+        "Google Street View dataset ",
+        "Hold out dataset (1/5 folds of the original dataset)",
+        "Open dataset",
+        "Train Dataset (3/5 folds of original dataset)",
+        "Validation Dataset (1/5 folds of original dataset)" ;
+    ns1:extractsDataUsing "Datafile downloads",
+        "asm. API calls" ;
+    ns1:inContext "Real Estate" ;
+    ns1:integratesDataThrough "Not defined" ;
+    ns1:resultsInGraphicalResult "Alluvial plot showing that the features related to neighborhood’s characteristics are the most important to predict the housing value. ",
+        "Graph showing the most important features to predict real-estate housing prices" ;
+    ns1:resultsInInteractiveResult "Not used" ;
+    ns1:resultsInModel "Open dataset with real estate data regarding 8 largest Italian cities: Turin, Milan, Genoa, Bologna, Florence, Rome, Naples, and Palermo",
+        "Open version of the predictive model, that uses only data released with an Open license ",
+        "multi-modal to predict the price of houses in unseen neighborhood conditions" ;
+    ns1:resultsInReport "Report on the implication of the results of analysis for citizens, local authorities and urban planners, and real estate investors." ;
+    ns1:utilizesAlgorithmForAnalysis "'Walk Score index, a proprietary algorithm that scores the walking distance of some typical consumers’ destinations'",
+        "XGBoost (learning rate of 0.001, λ = 5, α = 1, 3 minimum child weight, max depth of 20, and 4, 000 estimators)" ;
+    ns1:utilizesAnalysisMethod "Data Visualizations",
+        "K-fold cross-validation schema " ;
+    ns1:utilizesDataOfType "Geographical",
+        "Numerical",
+        "Textual",
+        "Visual (Images)" ;
+    ns1:utilizesDataSource "Google Street View API ",
+        "Italian National Institute for Statistics (ISTAT) ",
+        "OpenStreetMap ",
+        "Real estate website Immobiliare.it",
+        "Urban Atlas 2012 " ;
+    ns1:utilizesModelForAnalysis "Safety Perception Convolutional Neural Network (CNN) model " ;
+    ns1:utilizesProjectDocumentation "ATLAS dataset",
+        "Research articles relating to factors effecting real estate price " ;
+    ns1:utilizesSoftwareForAnalysis "PostGIS",
+        "PostgreSQL",
+        "Python" ;
+    ns1:verifiesResultsUsing "Validation of the created model using the hold-of and validation datasets using Mean Absolute Error (MAE) and Median Absolute Percentage Error (MdAPE)" .
+
